@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hallowed Empire</title>
+<meta name="description" content="Hallowed Empire - a medieval fantasy real-time strategy game by Iron Foundry. Story campaign with co-op, skirmish, and a level editor with Steam Workshop maps.">
+<meta property="og:title" content="Hallowed Empire">
+<meta property="og:description" content="A medieval fantasy real-time strategy game. Coming to Steam Early Access.">
+<meta property="og:image" content="images/archer.jpg">
+<link rel="icon" href="images/archer.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Iron Foundry presents</p>
+    <h1>Hallowed Empire</h1>
+    <p class="tagline">The Emperor is dead. His Crusade marches on without him.<br>At home, the kingdoms he left behind are coming apart.</p>
+    <div class="actions">
+      <a class="btn primary" href="https://store.steampowered.com/app/5080510/">Wishlist on Steam</a>
+      <a class="btn" href="#campaign">The Campaign</a>
+    </div>
+    <p class="note">Real-time strategy &middot; Windows &middot; Coming to Steam Early Access</p>
+  </div>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>A realm without a ruler</h2>
+    <p>While the Hallowed Crusade fights the dark force in the east, the Lord Regent rules in the Emperor's name.
+      Kingdoms have seceded. Bandits hold the roads. Villagers go missing in the night, and robed men preach that
+      only the dead can save the living.</p>
+    <p>Gather resources, raise villages and walls, train an army and lead it through a war where every side
+      is more than it seems.</p>
+  </section>
+
+  <section class="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <article>
+        <h3>Story Campaign</h3>
+        <p>A hand-built campaign of cutscenes, objectives and battles, from a village tithe to the siege of a walled city.</p>
+      </article>
+      <article>
+        <h3>Co-op Campaign</h3>
+        <p>Play the story with a friend. Share resources, split the army and hand units to each other mid-mission.</p>
+      </article>
+      <article>
+        <h3>Skirmish</h3>
+        <p>Fight AI rivals or other players on built-in maps such as Bandit Forest, Beloved Shore and Oasis.</p>
+      </article>
+      <article>
+        <h3>Many Factions</h3>
+        <p>The Empire, the Coalition, the High Elves, the Arcanists of Ostravel, and the undead that stir beneath it all.</p>
+      </article>
+      <article>
+        <h3>Siege Warfare</h3>
+        <p>Build towers and gates, then break them down again with catapults, ballistas and battering assaults.</p>
+      </article>
+      <article>
+        <h3>Level Editor &amp; Workshop</h3>
+        <p>Make your own maps with the built-in Level Creator and share them through the Steam Workshop.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="campaign" class="campaign">
+    <h2>The Campaign</h2>
+    <div class="missions">
+      <figure>
+        <img src="images/villager.jpg" alt="A Human villager" width="256" height="256">
+        <figcaption><span>Prologue</span>The Tithe</figcaption>
+      </figure>
+      <figure>
+        <img src="images/militia.jpg" alt="A militiaman" width="256" height="256">
+        <figcaption><span>Mission 1</span>Falbard Road</figcaption>
+      </figure>
+      <figure>
+        <img src="images/spearman.jpg" alt="A spearman" width="256" height="256">
+        <figcaption><span>Mission 2</span>The Missing</figcaption>
+      </figure>
+      <figure>
+        <img src="images/archer.jpg" alt="An archer" width="256" height="256">
+        <figcaption><span>Mission 3</span>The Stronghold</figcaption>
+      </figure>
+    </div>
+    <p class="more">&hellip;and on to the Walls of Ostravel.</p>
+  </section>
+
+  <section id="steam" class="steam">
+    <h2>Steamworks</h2>
+    <div class="grid">
+      <article>
+        <h3>Achievements</h3>
+        <p>Earn an achievement for each story mission you win. Co-op partners earn them too.</p>
+      </article>
+      <article>
+        <h3>Steam Cloud</h3>
+        <p>Your saves, campaign progress and challenge progress sync between PCs automatically. Custom maps are not synced; share them through the Workshop.</p>
+      </article>
+      <article>
+        <h3>Steam Workshop</h3>
+        <p>Publish maps you make in the Level Creator, and subscribe to maps made by other players.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="maps" class="maps">
+    <h2>Adding Custom Maps</h2>
+
+    <h3>From the Steam Workshop</h3>
+    <ol>
+      <li>Open the Hallowed Empire Workshop page in Steam and press <strong>Subscribe</strong> on a map.</li>
+      <li>Start the game. Steam downloads the map and the game installs it for you.</li>
+      <li>Pick it from <strong>User Maps</strong> in the lobby's Map list.</li>
+    </ol>
+    <p>Unsubscribe to remove it again. A Workshop map never replaces one of your own maps with the same name.</p>
+
+    <h3>By hand</h3>
+    <p>A map is two files: <code>MapName.json</code> (the level) and <code>MapName_logo.png</code> (its preview picture).
+      Copy both into your Levels folder:</p>
+    <pre><code>%USERPROFILE%\AppData\LocalLow\Iron Foundry\Hallowed Empire\Levels</code></pre>
+    <ol>
+      <li>Press <kbd>Win</kbd> + <kbd>R</kbd>, paste the path above and press Enter.</li>
+      <li>Drop the <code>.json</code> and <code>_logo.png</code> files in, keeping the same name.</li>
+      <li>Restart the game. The map shows under <strong>User Maps</strong>.</li>
+    </ol>
+
+    <h3>Sharing your own map</h3>
+    <p>Build a map in the Level Creator, then choose <strong>File &rsaquo; Publish to Steam Workshop&hellip;</strong>.
+      It uploads the map with its preview and opens the item page. Publishing the same map again updates it.
+      First-time authors need to accept the Steam Workshop agreement on that page before the map becomes visible.</p>
+  </section>
+
+  <section class="cta">
+    <h2>Follow the war</h2>
+    <p>Wishlist Hallowed Empire on Steam to hear when Early Access opens.</p>
+    <a class="btn primary" href="https://store.steampowered.com/app/5080510/">Wishlist on Steam</a>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Iron Foundry &middot; Hallowed Empire</p>
+</footer>
+
+</body>
+</html>

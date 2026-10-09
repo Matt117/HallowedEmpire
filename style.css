@@ -1,0 +1,194 @@
+:root {
+  --bg: #120e0b;
+  --bg-2: #1c1611;
+  --panel: #241c15;
+  --line: #4a3a28;
+  --gold: #c9a24a;
+  --gold-hi: #e6c470;
+  --text: #e8dcc6;
+  --muted: #a8977c;
+  --red: #8e1f1f;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Cardo", Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  font-family: "Cinzel", "Cardo", serif;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+a { color: var(--gold-hi); }
+
+/* Hero */
+.hero {
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 64px 16px;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(142, 31, 31, 0.35), transparent 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(201, 162, 74, 0.12), transparent 55%),
+    var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-inner { max-width: 760px; }
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 9vw, 5.5rem);
+  font-weight: 800;
+  margin: 0.2em 0 0.3em;
+  color: var(--gold-hi);
+  text-shadow: 0 2px 0 #000, 0 0 40px rgba(201, 162, 74, 0.25);
+}
+
+.tagline {
+  font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+  font-style: italic;
+  margin: 0 0 2rem;
+}
+
+.note { color: var(--muted); font-size: 0.95rem; margin-top: 1.5rem; }
+
+.actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.6em;
+  border: 1px solid var(--gold);
+  color: var(--gold-hi);
+  text-decoration: none;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  background: rgba(0, 0, 0, 0.3);
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn:hover, .btn:focus-visible { background: var(--gold); color: var(--bg); }
+
+.btn.primary { background: var(--red); border-color: var(--gold); color: var(--text); }
+.btn.primary:hover, .btn.primary:focus-visible { background: #a82a2a; color: #fff; }
+
+/* Sections */
+main section {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 72px 16px;
+}
+
+main section + section { border-top: 1px solid var(--line); }
+
+main h2 {
+  font-size: clamp(1.7rem, 4vw, 2.3rem);
+  text-align: center;
+  margin: 0 0 1.2em;
+}
+
+.intro { max-width: 720px; }
+.intro p { margin: 0 0 1em; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.grid article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 22px 24px;
+}
+
+.grid h3 { margin: 0 0 0.4em; font-size: 1.15rem; }
+.grid p { margin: 0; color: var(--text); }
+
+.missions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.missions figure { margin: 0; text-align: center; }
+
+.missions img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+}
+
+.missions figcaption {
+  margin-top: 10px;
+  font-family: "Cinzel", serif;
+  color: var(--gold-hi);
+  font-size: 1.1rem;
+}
+
+.missions figcaption span {
+  display: block;
+  font-family: "Cardo", serif;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.more { text-align: center; font-style: italic; color: var(--muted); margin-top: 2rem; }
+
+.maps { max-width: 760px; }
+.maps h3 { font-size: 1.2rem; margin: 1.8em 0 0.5em; }
+.maps h3:first-of-type { margin-top: 0; }
+.maps ol { padding-left: 1.4em; }
+.maps li { margin-bottom: 0.3em; }
+
+code, kbd {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 0.9em;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 0.05em 0.35em;
+}
+
+pre {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  overflow-x: auto;
+}
+
+pre code { background: none; border: 0; padding: 0; }
+
+.cta { text-align: center; }
+.cta p { margin: 0 0 1.5rem; }
+
+footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg-2);
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 24px 16px;
+}
