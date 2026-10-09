@@ -125,38 +125,54 @@ main h2 {
 .grid h3 { margin: 0 0 0.4em; font-size: 1.15rem; }
 .grid p { margin: 0; color: var(--text); }
 
-.missions {
+.story { max-width: 720px; }
+.story p { margin: 0 0 1em; }
+
+.emph { font-style: italic; color: var(--gold-hi); }
+
+.pillars {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 48px 40px;
 }
 
-.missions figure { margin: 0; text-align: center; }
+.pillars h2 { text-align: left; font-size: 1.6rem; margin-bottom: 0.6em; }
+.pillar p { margin: 0 0 1em; }
 
-.missions img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid var(--line);
+.hallowed { color: var(--gold-hi); }
+.dark { color: #b48ad6; }
+
+.choices { padding-left: 1.2em; margin: 0 0 1em; }
+.choices li { margin-bottom: 0.4em; }
+
+.units {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 1.2em;
 }
 
-.missions figcaption {
-  margin-top: 10px;
-  font-family: "Cinzel", serif;
-  color: var(--gold-hi);
-  font-size: 1.1rem;
+.units img { width: 100%; height: auto; display: block; border: 1px solid var(--line); }
+
+.feature-list {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
-.missions figcaption span {
-  display: block;
-  font-family: "Cardo", serif;
-  color: var(--muted);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+.feature-list li {
+  padding: 0.7em 0 0.7em 1.8em;
+  border-bottom: 1px solid var(--line);
+  position: relative;
 }
 
-.more { text-align: center; font-style: italic; color: var(--muted); margin-top: 2rem; }
+.feature-list li::before {
+  content: "\2726";
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+}
 
 .maps { max-width: 760px; }
 .maps h3 { font-size: 1.2rem; margin: 1.8em 0 0.5em; }
