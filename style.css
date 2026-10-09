@@ -143,6 +143,8 @@ main h2 {
 .grid h3 { margin: 0 0 0.4em; font-size: 1.15rem; }
 .grid p { margin: 0; color: var(--text); }
 
+main section.trailer { max-width: 1400px; padding-top: 56px; }
+
 .video {
   position: relative;
   aspect-ratio: 16 / 9;
