@@ -160,6 +160,20 @@ main section.trailer { max-width: 1400px; padding-top: 56px; }
 
 .emph { font-style: italic; color: var(--gold-hi); }
 
+.field-intro { max-width: 720px; margin: 0 auto 2.5rem; }
+.field-intro p { margin: 0 0 1em; }
+
+.keys-title { text-align: center; font-size: 1.3rem; margin: 2.5em 0 0.8em; }
+
+.keys { width: 100%; max-width: 720px; margin: 0 auto; border-collapse: collapse; }
+.keys td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.keys td:first-child { white-space: nowrap; color: var(--gold-hi); width: 1%; }
+.keys kbd + kbd { margin-left: 3px; }
+
+@media (max-width: 480px) {
+  .keys td:first-child { white-space: normal; }
+}
+
 .pillars {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
